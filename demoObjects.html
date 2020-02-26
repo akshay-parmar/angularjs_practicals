@@ -3,10 +3,12 @@
     <script src="D:\AngularJS\angular-1.7.9\angular.min.js">
     </script> 
     <body>
-          <div ng-app="" ng-init="person={firstName: 'Akshay', lastName: 'Parmar'}">
+          <div ng-app="" ng-init="person={firstName: 'Akshay', lastName: 'Parmar'}; points=[1,5,14,19]">
                 <p>The First Name is {{person.firstName}}</p>
 
                 <p>The Last Name is <span ng-bind="person.lastName"></span></p>
+
+                <p>The Third Element is {{points[2]}}</p>
           </div>
     </body>
 </html>
