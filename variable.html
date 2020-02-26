@@ -3,10 +3,12 @@
     <script src="D:\AngularJS\angular-1.7.9\angular.min.js">
     </script>
     <body>
-          <div  ng-init="firstName = 'Akshay Parmar'">
+          <div ng-app="" ng-init="firstName = 'Akshay Parmar'; myCol = 'lightblue'">
                <p>The name of the Candiate is <span ng-bind="firstName"></span></p>
 
                <p>My First Expression is : {{5 * 5}}</p>
+
+               <input style="background-color:{{myCol}}" ng-model="myCol">
           </div>
     </body>
 </html>
