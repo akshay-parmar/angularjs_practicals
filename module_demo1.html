@@ -1,0 +1,19 @@
+<!-- For Adding a Controller in Module (Example - 1)-->
+<!DOCTYPE html>
+<html>
+      <script src="D:\AngularJS\angular-1.7.9\angular.min.js">        
+      </script>
+      <body>
+            <div ng-app="myApp" ng-controller="myCtrl">
+                  {{ firstName + " " + lastName}}
+            </div>
+
+            <script>
+                   var app = angular.module("myApp",[]); 
+                   app.controller("myCtrl", function($scope){
+                         $scope.firstName = "John";
+                         $scope.lastName = "Doe";
+                   });
+            </script>
+      </body>
+</html>
