@@ -9,6 +9,7 @@
                  var app = angular.module("myApp",[]);
                  app.directive("testakDir",function(){
                      return {
+                         restrict : "A",
                          template : "This is Container demo...!!! Working Fine....!"
                      };
                  });
