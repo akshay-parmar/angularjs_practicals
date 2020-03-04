@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+      <script src="D:\AngularJS\angular-1.7.9\angular.min.js">
+      </script>
+
+      <body>
+          <div ng-app="" ng-init="names=[{name:'Ja1',country:'Norway'},{name:'Ja2',country:'Sweden'}]">
+               <ul>
+                   <li ng-repeat="x in names">
+                       {{x.name + " " + x.country}}
+                   </li>
+               </ul>
+          </div>
+      </body> 
+</html>
